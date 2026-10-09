@@ -14,7 +14,7 @@ public class OllamaEmbeddingService {
 
     public OllamaEmbeddingService() {
         this.restClient = RestClient.builder()
-                .baseUrl("http://localhost:11434")
+                .baseUrl(System.getenv().getOrDefault("OLLAMA_BASE_URL", "http://localhost:11434"))
                 .build();
     }
 

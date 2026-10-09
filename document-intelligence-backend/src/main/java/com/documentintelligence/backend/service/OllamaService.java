@@ -13,7 +13,7 @@ public class OllamaService {
 
     public OllamaService() {
         this.restClient = RestClient.builder()
-                .baseUrl("http://localhost:11434")
+                .baseUrl(System.getenv().getOrDefault("OLLAMA_BASE_URL", "http://localhost:11434"))
                 .build();
     }
 
@@ -38,4 +38,3 @@ public class OllamaService {
         return response.get("response").toString();
     }
 }
-
