@@ -222,6 +222,3 @@ Deployment hardening, public file persistence, production AI connectivity, and s
 - [ ] Deploy the frontend, API, and database
 - [ ] Add final screenshots and a live demo URL
 
-## License
-
-Choose and add a license before distributing this project publicly. Until a license is added, do not assume others have permission to reuse or redistribute the code.
