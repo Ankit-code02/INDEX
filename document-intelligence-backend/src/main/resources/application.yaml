@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: document-intelligence-backend
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/document_intelligence}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+server:
+  port: 8080

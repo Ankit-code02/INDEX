@@ -1,0 +1,25 @@
+﻿# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Frontend dependencies and generated output
+document-intelligence-frontend/node_modules/
+document-intelligence-frontend/dist/
+
+# Backend build output and uploaded documents
+document-intelligence-backend/target/
+document-intelligence-backend/uploads/
+
+# Local logs and temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+document-intelligence-backend/sample.pdf
